@@ -24,5 +24,8 @@
 /* Responsive Design */
 @import 'responsive.css';
 
+/* Icons */
+@import 'icons.css';
+
 /* Boids Animation */
 @import 'boids.css';

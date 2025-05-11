@@ -1,0 +1,8 @@
+/* Icon Styles */
+
+/* Blog Icon */
+.icon-blog:before {
+    content: '📝'; /* Using an emoji as a simple solution */
+}
+
+/* You can replace the emoji with a custom icon or font icon if needed */

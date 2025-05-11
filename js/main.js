@@ -70,6 +70,7 @@ function initBoidsSimulation() {
 // Set active navigation link based on current page
 function setActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentHost = window.location.hostname;
 
     // Remove all active classes first
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -77,21 +78,28 @@ function setActiveNavLink() {
 
     // Add active class to current page link
     let navId;
-    switch(currentPage) {
-        case 'index.html':
-            navId = 'nav-home';
-            break;
-        case 'about.html':
-            navId = 'nav-about';
-            break;
-        case 'portfolio.html':
-            navId = 'nav-portfolio';
-            break;
-        case 'contact.html':
-            navId = 'nav-contact';
-            break;
-        default:
-            navId = 'nav-home';
+
+    // Check if we're on the blog domain
+    if (currentHost.includes('blog.noswad.org')) {
+        navId = 'nav-blog';
+    } else {
+        // Otherwise determine based on the current page
+        switch(currentPage) {
+            case 'index.html':
+                navId = 'nav-home';
+                break;
+            case 'about.html':
+                navId = 'nav-about';
+                break;
+            case 'portfolio.html':
+                navId = 'nav-portfolio';
+                break;
+            case 'contact.html':
+                navId = 'nav-contact';
+                break;
+            default:
+                navId = 'nav-home';
+        }
     }
 
     const activeLink = document.getElementById(navId);
