@@ -1,0 +1,399 @@
+/* Dark Mode Styles */
+
+/* Base Dark Mode */
+body.dark-theme {
+    color: var(--dark-text);
+    background-color: var(--dark-bg);
+}
+
+/* Light Mode Specific Styles */
+body.light-theme .hero,
+body.light-theme .about-hero,
+body.light-theme .portfolio-hero,
+body.light-theme .contact-hero,
+body.light-theme .thank-you-hero {
+    padding-top: 10rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not(.light-theme) {
+        color: var(--dark-text);
+        background-color: var(--dark-bg);
+    }
+}
+
+/* Dark Mode Header */
+.dark-theme .logo a,
+.dark-theme .nav-links a {
+    color: var(--dark-text);
+}
+
+.dark-theme .nav-links a {
+    color: var(--dark-text-secondary);
+}
+
+.dark-theme .nav-links a:hover {
+    color: var(--dark-text);
+}
+
+.dark-theme .nav-links a.active {
+    color: var(--primary-color);
+}
+
+.dark-theme .nav-links a.active::after {
+    background-color: var(--primary-color);
+    height: 1px;
+    opacity: 0.7;
+}
+
+.dark-theme .mobile-menu-btn span {
+    background-color: var(--dark-text);
+}
+
+/* Dark Mode Buttons */
+.dark-theme .secondary-btn {
+    color: var(--dark-text);
+    border-color: var(--dark-text);
+}
+
+.dark-theme .secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+    border-color: var(--primary-color);
+}
+
+.dark-theme .small-btn {
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+}
+
+.dark-theme .small-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* Dark Mode Hero Sections */
+.dark-theme .hero,
+.dark-theme .about-hero,
+.dark-theme .portfolio-hero,
+.dark-theme .contact-hero,
+.dark-theme .thank-you-hero {
+    background-color: rgba(18, 18, 18, 0.7); /* Semi-transparent dark background */
+    backdrop-filter: blur(5px); /* Slight blur effect for better readability */
+    padding-top: 10rem;
+}
+
+.dark-theme .hero h1,
+.dark-theme .about-hero h1,
+.dark-theme .portfolio-hero h1,
+.dark-theme .contact-hero h1,
+.dark-theme .thank-you-hero h1 {
+    color: var(--dark-text);
+}
+
+.dark-theme .hero p,
+.dark-theme .portfolio-hero p,
+.dark-theme .thank-you-hero p {
+    color: var(--dark-text-secondary);
+}
+
+/* Dark Mode Featured Work */
+.dark-theme .featured-work {
+    padding: 3rem 0 5rem;
+    background-color: rgba(30, 30, 30, 0.7); /* Semi-transparent dark background */
+    backdrop-filter: blur(3px); /* Slight blur effect for better readability */
+    flex: 1; /* Take up remaining space in flex container */
+}
+
+.dark-theme .featured-work h2 {
+    color: var(--dark-text);
+}
+
+.dark-theme .project-card {
+    background-color: var(--dark-card-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-theme .project-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: var(--primary-color);
+}
+
+.dark-theme .project-card h3 {
+    color: var(--dark-text);
+}
+
+.dark-theme .project-card p {
+    color: var(--dark-text-secondary);
+}
+
+/* Fix for project tags in dark mode */
+.dark-theme .project-tags span {
+    background-color: var(--dark-surface);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-theme .view-all a {
+    color: var(--primary-color);
+}
+
+.dark-theme .view-all a:hover {
+    color: var(--primary-color-dark);
+    text-decoration: underline;
+}
+
+/* Dark Mode About Page */
+.dark-theme .about-content,
+.dark-theme .skills,
+.dark-theme .portfolio-grid,
+.dark-theme .contact-content,
+.dark-theme .thank-you-content {
+    background-color: rgba(30, 30, 30, 0.7); /* Semi-transparent dark background */
+    backdrop-filter: blur(3px); /* Slight blur effect for better readability */
+}
+
+.dark-theme .about-text h2,
+.dark-theme .skills h2 {
+    color: var(--dark-text);
+}
+
+.dark-theme .skills h2::after {
+    background-color: var(--primary-color);
+}
+
+.dark-theme .about-text p {
+    color: var(--dark-text-secondary);
+}
+
+.dark-theme .skill-category {
+    background-color: var(--dark-card-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--dark-border);
+    border-top: 3px solid var(--primary-color);
+}
+
+.dark-theme .skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-color: var(--dark-border);
+    border-top-color: var(--primary-color);
+}
+
+.dark-theme .skill-category h3 {
+    color: var(--primary-color);
+}
+
+.dark-theme .skill-category ul li {
+    color: var(--dark-text-secondary);
+}
+
+.dark-theme .skill-category ul li strong {
+    color: var(--dark-text);
+}
+
+/* Dark Mode Contact Page */
+.dark-theme .contact-info h2,
+.dark-theme .contact-form h2,
+.dark-theme .thank-you-message h2 {
+    color: var(--dark-text);
+}
+
+.dark-theme .form-group label {
+    color: var(--dark-text);
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+.dark-theme .form-group input:focus,
+.dark-theme .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.4);
+}
+
+/* Media Query Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body:not(.light-theme) .logo a {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .nav-links a {
+        color: var(--dark-text-secondary);
+        transition: var(--transition);
+    }
+
+    body:not(.light-theme) .nav-links a:hover {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .nav-links a.active {
+        color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .nav-links a.active::after {
+        background-color: var(--primary-color);
+        height: 1px;
+        opacity: 0.7;
+    }
+
+    body:not(.light-theme) .mobile-menu-btn span {
+        background-color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .secondary-btn {
+        color: var(--dark-text);
+        border-color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .secondary-btn:hover {
+        background-color: var(--primary-color);
+        color: var(--dark-text);
+        border-color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .small-btn {
+        background-color: var(--primary-color);
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .small-btn:hover {
+        background-color: var(--primary-color-dark);
+    }
+
+    body:not(.light-theme) .hero,
+    body:not(.light-theme) .about-hero,
+    body:not(.light-theme) .portfolio-hero,
+    body:not(.light-theme) .contact-hero {
+        background-color: rgba(18, 18, 18, 0.7); /* Semi-transparent dark background */
+        backdrop-filter: blur(5px); /* Slight blur effect for better readability */
+        padding-top: 10rem;
+    }
+
+    body:not(.light-theme) .hero h1 {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .hero p {
+        color: var(--dark-text-secondary);
+    }
+
+    body:not(.light-theme) .featured-work {
+        padding: 3rem 0 5rem;
+        background-color: rgba(30, 30, 30, 0.7); /* Semi-transparent dark background */
+        backdrop-filter: blur(3px); /* Slight blur effect for better readability */
+        flex: 1; /* Take up remaining space in flex container */
+    }
+
+    body:not(.light-theme) .featured-work h2 {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .project-card {
+        background-color: var(--dark-card-bg);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--dark-border);
+    }
+
+    body:not(.light-theme) .project-card:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        border-color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .project-card h3 {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .project-card p {
+        color: var(--dark-text-secondary);
+    }
+
+    /* Fix for project tags in dark mode */
+    body:not(.light-theme) .project-tags span {
+        background-color: var(--dark-surface);
+        color: var(--dark-text);
+        border: 1px solid var(--dark-border);
+    }
+
+    body:not(.light-theme) .view-all a {
+        color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .view-all a:hover {
+        color: var(--primary-color-dark);
+        text-decoration: underline;
+    }
+
+    body:not(.light-theme) .about-content,
+    body:not(.light-theme) .skills,
+    body:not(.light-theme) .portfolio-grid,
+    body:not(.light-theme) .contact-content {
+        background-color: rgba(30, 30, 30, 0.7); /* Semi-transparent dark background */
+        backdrop-filter: blur(3px); /* Slight blur effect for better readability */
+    }
+
+    body:not(.light-theme) .about-text h2,
+    body:not(.light-theme) .skills h2 {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .skills h2::after {
+        background-color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .about-text p {
+        color: var(--dark-text-secondary);
+    }
+
+    body:not(.light-theme) .skill-category {
+        background-color: var(--dark-card-bg);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--dark-border);
+        border-top: 3px solid var(--primary-color);
+    }
+
+    body:not(.light-theme) .skill-category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        border-color: var(--dark-border);
+        border-top-color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .skill-category h3 {
+        color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .skill-category ul li {
+        color: var(--dark-text-secondary);
+    }
+
+    body:not(.light-theme) .skill-category ul li strong {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .contact-info h2,
+    body:not(.light-theme) .contact-form h2 {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .form-group label {
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .form-group input,
+    body:not(.light-theme) .form-group textarea {
+        background-color: var(--dark-surface);
+        border-color: var(--dark-border);
+        color: var(--dark-text);
+    }
+
+    body:not(.light-theme) .form-group input:focus,
+    body:not(.light-theme) .form-group textarea:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.4);
+    }
+}

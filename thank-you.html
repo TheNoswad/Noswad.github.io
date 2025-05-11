@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for your message">
+    <meta name="keywords" content="thank you, contact, message received">
+    <title>Noswad | Thank You</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Background animation container with boids simulation -->
+    <div class="bg-animation">
+        <canvas id="boids-canvas"></canvas>
+    </div>
+
+    <header class="minimal-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Noswad.org</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" id="nav-home">Home</a></li>
+                    <li><a href="about.html" id="nav-about">About</a></li>
+                    <li><a href="portfolio.html" id="nav-portfolio">Portfolio</a></li>
+                    <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thank-you-hero">
+            <div class="container">
+                <h1>Thank You!</h1>
+                <p>Your message has been received. I'll get back to you as soon as possible.</p>
+            </div>
+        </section>
+
+        <section class="thank-you-content">
+            <div class="container">
+                <div class="thank-you-message">
+                    <p>In the meantime, feel free to check out my <a href="portfolio.html">portfolio</a> or connect with me on social media:</p>
+                    <div class="social-links">
+                        <a href="https://github.com/TheNoswad/" aria-label="GitHub"><i class="icon-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/noswad/" aria-label="LinkedIn"><i class="icon-linkedin"></i> LinkedIn</a>
+                        <a href="https://discord.com/users/noswad" aria-label="Discord"><i class="icon-discord"></i> Discord: noswad</a>
+                    </div>
+                    <div class="back-home">
+                        <a href="index.html" class="btn primary-btn">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/boids.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

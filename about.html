@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about me, my skills, and my experience">
+    <meta name="keywords" content="about me, skills, experience, web developer">
+    <title>Dawson | About Me</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Background animation container with boids simulation -->
+    <div class="bg-animation">
+        <canvas id="boids-canvas"></canvas>
+    </div>
+
+    <header class="minimal-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Noswad.org</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" id="nav-home">Home</a></li>
+                    <li><a href="about.html" id="nav-about">About</a></li>
+                    <li><a href="portfolio.html" id="nav-portfolio">Portfolio</a></li>
+                    <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Me</h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="images/profile-placeholder.jpg" alt="Dawson">
+                    </div>
+                    <div class="about-text">
+                        <h2>Who I Am</h2>
+                        <p>Hello! I'm Dawson, a passionate developer with a focus on game development, systems programming, and web technologies. I believe in building robust, efficient solutions that solve real problems.</p>
+                        <p>I'm particularly interested in Rust ecosystem development, from low-level graphics programming with wgpu to game development with Bevy. I enjoy working on both frontend and backend systems, with a special interest in performance optimization and systems design.</p>
+                        <p>When I'm not coding, I'm exploring new technologies, contributing to open-source projects, and experimenting with my homelab setup.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>🕹️ Game Development / Graphics</h3>
+                        <ul>
+                            <li><strong>Bevy</strong> (Rust ECS game engine) – real-time systems, ECS modeling</li>
+                            <li><strong>wgpu</strong> – low-level graphics programming</li>
+                            <li><strong>Rapier</strong> – physics engine (used in Bevy)</li>
+                            <li><strong>Godot</strong> (basics) – visual scripting, scene graph, 2D/3D game logic</li>
+                            <li><strong>Minetest + Lua</strong> – scripting, game logic, modding</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>🖥️ Backend / Systems</h3>
+                        <ul>
+                            <li><strong>Rust</strong> (Serde, async, server logic) – REST APIs, background services</li>
+                            <li><strong>Oracle Cloud Infrastructure</strong> – VPS or bare metal server hosting</li>
+                            <li><strong>Fedora Server + Cockpit</strong> – Linux sysadmin, homelab orchestration</li>
+                            <li><strong>Server hosting</strong> (self or cloud) – backend environments</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>🛠️ Dev Tools & IDEs</h3>
+                        <ul>
+                            <li><strong>VSCode</strong> – primary development environment</li>
+                            <li><strong>RustRover</strong> – specialized Rust development</li>
+                            <li><strong>WebStorm</strong> – JavaScript and web development</li>
+                            <li><strong>Docker</strong> – containerization for development and deployment</li>
+                            <li><strong>Git</strong> – version control and collaboration</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>🌐 Web Development</h3>
+                        <ul>
+                            <li><strong>HTML5</strong> – semantic markup and structure</li>
+                            <li><strong>CSS3</strong> – styling and responsive design</li>
+                            <li><strong>JavaScript</strong> – client-side interactivity</li>
+                            <li><strong>Responsive Design</strong> – mobile-first approach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/boids.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

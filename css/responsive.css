@@ -1,0 +1,115 @@
+/* Responsive Design */
+
+/* Large Devices (Desktops) */
+@media (max-width: 992px) {
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: var(--transition);
+        text-align: center;
+    }
+
+    .dark-theme .nav-links,
+    body:not(.light-theme) .nav-links,
+    .minimal-header .nav-links {
+        background-color: var(--dark-surface);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .dark-theme .hero,
+    body:not(.light-theme) .hero,
+    .dark-theme .about-hero,
+    .dark-theme .portfolio-hero,
+    .dark-theme .contact-hero,
+    body:not(.light-theme) .about-hero,
+    body:not(.light-theme) .portfolio-hero,
+    body:not(.light-theme) .contact-hero,
+    body.light-theme .hero,
+    body.light-theme .about-hero,
+    body.light-theme .portfolio-hero,
+    body.light-theme .contact-hero {
+        padding-top: 8rem;
+    }
+
+    .minimal-header {
+        padding-top: 1rem;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 576px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 7rem 0 3rem;
+    }
+
+    .dark-theme .hero,
+    body:not(.light-theme) .hero,
+    .dark-theme .about-hero,
+    .dark-theme .portfolio-hero,
+    .dark-theme .contact-hero,
+    body:not(.light-theme) .about-hero,
+    body:not(.light-theme) .portfolio-hero,
+    body:not(.light-theme) .contact-hero,
+    body.light-theme .hero,
+    body.light-theme .about-hero,
+    body.light-theme .portfolio-hero,
+    body.light-theme .contact-hero {
+        padding-top: 7rem;
+    }
+
+    .featured-work,
+    .about-content,
+    .portfolio-grid,
+    .contact-content {
+        padding: 3rem 0;
+    }
+}

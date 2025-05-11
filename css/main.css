@@ -1,0 +1,28 @@
+/* Main CSS File - Imports all modular CSS files */
+
+/* Base Styles */
+@import 'base.css';
+
+/* Layout */
+@import 'layout.css';
+
+/* Components */
+@import 'components.css';
+
+/* Header */
+@import 'header.css';
+
+/* Footer */
+@import 'footer.css';
+
+/* Page-Specific Styles */
+@import 'pages.css';
+
+/* Dark Mode */
+@import 'dark-mode.css';
+
+/* Responsive Design */
+@import 'responsive.css';
+
+/* Boids Animation */
+@import 'boids.css';

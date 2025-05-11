@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website showcasing my portfolio, skills, and experience">
+    <meta name="keywords" content="portfolio, web developer, personal website">
+    <title>Noswad | Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Background animation container with boids simulation -->
+    <div class="bg-animation">
+        <canvas id="boids-canvas"></canvas>
+    </div>
+
+    <div class="landing-page">
+        <header class="minimal-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Noswad.org</a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" id="nav-home">Home</a></li>
+                        <li><a href="about.html" id="nav-about">About</a></li>
+                        <li><a href="portfolio.html" id="nav-portfolio">Portfolio</a></li>
+                        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <h1>Hello, I'm <span>Dawson</span></h1>
+                <p>I tinker with tech, 3D printing, and game development.</p>
+                <div class="cta-buttons">
+                    <a href="portfolio.html" class="btn primary-btn">View My Work</a>
+                    <a href="contact.html" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-work">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project-placeholder.jpg" alt="Project 1">
+                        </div>
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of the project and technologies used.</p>
+                        <a href="portfolio.html" class="btn small-btn">View Details</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project-placeholder.jpg" alt="Project 2">
+                        </div>
+                        <h3>Project Title 2</h3>
+                        <p>Brief description of the project and technologies used.</p>
+                        <a href="portfolio.html" class="btn small-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="portfolio.html">View All Projects →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/boids.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
