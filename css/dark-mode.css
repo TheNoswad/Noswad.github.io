@@ -127,6 +127,22 @@ body.light-theme .thank-you-hero {
     color: var(--dark-text-secondary);
 }
 
+/* Coming Soon in dark mode */
+.dark-theme .coming-soon-message {
+    background-color: var(--dark-card-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--dark-border);
+    border-left: 4px solid var(--primary-color);
+}
+
+.dark-theme .coming-soon-message h3 {
+    color: var(--primary-color);
+}
+
+.dark-theme .coming-soon-message p {
+    color: var(--dark-text-secondary);
+}
+
 /* Fix for project tags in dark mode */
 .dark-theme .project-tags span {
     background-color: var(--dark-surface);
@@ -309,6 +325,22 @@ body.light-theme .thank-you-hero {
     }
 
     body:not(.light-theme) .project-card p {
+        color: var(--dark-text-secondary);
+    }
+
+    /* Coming Soon in dark mode */
+    body:not(.light-theme) .coming-soon-message {
+        background-color: var(--dark-card-bg);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--dark-border);
+        border-left: 4px solid var(--primary-color);
+    }
+
+    body:not(.light-theme) .coming-soon-message h3 {
+        color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .coming-soon-message p {
         color: var(--dark-text-secondary);
     }
 

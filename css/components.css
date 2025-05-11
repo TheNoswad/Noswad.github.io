@@ -183,6 +183,35 @@
     box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.25);
 }
 
+/* Coming Soon Container */
+.coming-soon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.coming-soon-message {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--primary-color);
+}
+
+.coming-soon-message h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.coming-soon-message p {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
 /* Contact Items */
 .contact-item {
     margin-bottom: 2rem;
