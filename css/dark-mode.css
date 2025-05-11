@@ -143,6 +143,18 @@ body.light-theme .thank-you-hero {
     color: var(--dark-text-secondary);
 }
 
+.dark-theme .coming-soon-message .blog-note {
+    border-top: 1px solid var(--dark-border);
+}
+
+.dark-theme .coming-soon-message .blog-note a {
+    color: var(--primary-color);
+}
+
+.dark-theme .coming-soon-message .blog-note a:hover {
+    color: var(--primary-color-dark);
+}
+
 /* Fix for project tags in dark mode */
 .dark-theme .project-tags span {
     background-color: var(--dark-surface);
@@ -342,6 +354,18 @@ body.light-theme .thank-you-hero {
 
     body:not(.light-theme) .coming-soon-message p {
         color: var(--dark-text-secondary);
+    }
+
+    body:not(.light-theme) .coming-soon-message .blog-note {
+        border-top: 1px solid var(--dark-border);
+    }
+
+    body:not(.light-theme) .coming-soon-message .blog-note a {
+        color: var(--primary-color);
+    }
+
+    body:not(.light-theme) .coming-soon-message .blog-note a:hover {
+        color: var(--primary-color-dark);
     }
 
     /* Fix for project tags in dark mode */

@@ -212,6 +212,25 @@
     font-size: 1.1rem;
 }
 
+.coming-soon-message .blog-note {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    font-size: 1rem;
+}
+
+.coming-soon-message .blog-note a {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.coming-soon-message .blog-note a:hover {
+    color: var(--primary-color-dark);
+    text-decoration: underline;
+}
+
 /* Contact Items */
 .contact-item {
     margin-bottom: 2rem;
