@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize boids simulation for the background
     initBoidsSimulation();
+
+    // Add boids info button if we're on a page with boids
+    addBoidsInfoButton();
 });
 
 // Apply dark mode based on system preference
@@ -121,4 +124,32 @@ function setupContactForm() {
             // But allow the form to submit to FormSubmit.co
         });
     }
+}
+
+// Add boids info button to pages with boids simulation
+function addBoidsInfoButton() {
+    // Check if we're on a page with the boids canvas
+    const boidsCanvas = document.getElementById('boids-canvas');
+    if (!boidsCanvas) return;
+
+    // Create the button element
+    const infoButton = document.createElement('button');
+    infoButton.className = 'boids-info-btn';
+    infoButton.setAttribute('aria-label', 'What are these floating in the background?');
+    infoButton.innerHTML = '?';
+
+    // Add tooltip
+    const tooltip = document.createElement('span');
+    tooltip.className = 'tooltip';
+    tooltip.textContent = 'What are these floating in the background?';
+    infoButton.appendChild(tooltip);
+
+    // Add click event listener
+    infoButton.addEventListener('click', function() {
+        // Open blog post in a new tab
+        window.open('https://blog.noswad.org/boids-simulation', '_blank');
+    });
+
+    // Add the button to the body
+    document.body.appendChild(infoButton);
 }

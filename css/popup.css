@@ -1,0 +1,72 @@
+/* Popup Button Styles */
+
+.boids-info-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(74, 108, 247, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.boids-info-btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    body:not(.light-theme) .boids-info-btn {
+        background-color: rgba(100, 130, 255, 0.8);
+    }
+}
+
+.dark-theme .boids-info-btn {
+    background-color: rgba(100, 130, 255, 0.8);
+}
+
+/* Tooltip styles */
+.boids-info-btn .tooltip {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background-color: white;
+    color: var(--dark-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.boids-info-btn:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dark mode tooltip */
+@media (prefers-color-scheme: dark) {
+    body:not(.light-theme) .boids-info-btn .tooltip {
+        background-color: var(--dark-surface);
+        color: var(--dark-text);
+    }
+}
+
+.dark-theme .boids-info-btn .tooltip {
+    background-color: var(--dark-surface);
+    color: var(--dark-text);
+}
