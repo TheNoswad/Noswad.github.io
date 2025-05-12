@@ -135,19 +135,19 @@ function addBoidsInfoButton() {
     // Create the button element
     const infoButton = document.createElement('button');
     infoButton.className = 'boids-info-btn';
-    infoButton.setAttribute('aria-label', 'What are these floating in the background?');
+    infoButton.setAttribute('aria-label', 'What are these floating in the background? (Blog post coming soon!)');
     infoButton.innerHTML = '?';
 
     // Add tooltip
     const tooltip = document.createElement('span');
     tooltip.className = 'tooltip';
-    tooltip.textContent = 'What are these floating in the background?';
+    tooltip.textContent = 'What are these floating in the background? (Blog post coming soon!)';
     infoButton.appendChild(tooltip);
 
     // Add click event listener
     infoButton.addEventListener('click', function() {
-        // Open blog post in a new tab
-        window.open('https://blog.noswad.org/boids-simulation', '_blank');
+        // Open blog post in a new tab (coming soon)
+        window.open('https://en.wikipedia.org/wiki/Boids', '_blank');
     });
 
     // Add the button to the body
